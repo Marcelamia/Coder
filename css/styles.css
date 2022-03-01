@@ -7,7 +7,13 @@ ul{
 }
 a{
     text-decoration: none;
-    color:darkgray;
+    color:darkgray; 
+}
+a:hover{
+    color: whitesmoke; 
+}
+.listaMenu li a{
+    transition: all 1s;
 }
 body{
     display: grid;
@@ -37,16 +43,22 @@ header{
     justify-content:space-evenly;
     align-items:center;
     color:rgb(47, 47, 44);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 .imgMenu{
     height: 80%;
+    transition: all 2s;
+}
+.imgMenu:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s;
 }
 footer{
     display: flex;
     flex-wrap: nowrap;
     grid-area: footer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform:none;
     font-size: 2vh;
     background-color: #231F20;
     color: #3D7BBA;;
@@ -59,28 +71,48 @@ footer{
     justify-content: space-evenly;
     align-items:center;
     font-size: 100%;
+    transition: 30ms;
+}
+.footerUno:hover{
+    transform: scale(1.05,1.05);
+    transition: 150ms;
 }
 .footerDos{
     display: flex;
     justify-content: space-evenly;
     align-items:center;
     font-size: 100%;
+    transition: 30ms;
+}
+.footerDos:hover{
+    transform: scale(1.05,1.05);
+    transition: 150ms;
 }
 .footerTres{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: 30ms;
 }
-.footerCuatro{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center; 
+.footerTres:hover{
+    transform: scale(1.05,1.05);
+    transition: 150ms;
 }
 .footerTres img{
     width: 60%;
 }    
+.footerCuatro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    transition: 30ms;
+}
+.footerCuatro:hover{
+    transform: scale(1.05,1.05);
+    transition: 150ms;
+}
 h1{ 
-    font-family: Verdana; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     font-style:normal; 
     font-variant:small-caps;
     color:#231F20;
@@ -99,7 +131,7 @@ h1{
     border-bottom: 1px solid #231F20;
 }
 .tituloH1{
-    font-family: Verdana; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     font-style:normal; 
     font-variant:small-caps;
     font-size:4vh;
@@ -126,10 +158,10 @@ main{
     align-items:center;
     align-content: center;
     color: #231F20;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }    
 .tituloPagina{
-    font-family: Verdana; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
     font-style:normal; 
     font-variant:small-caps;
     font-size:5vh;
@@ -140,7 +172,7 @@ main{
 }
 .h3Portada{
     color:#231F20;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 4vh;
     padding-top: 10vh;
     text-align: center;
@@ -149,7 +181,8 @@ main{
     display: flex;
     flex-direction: column;
     width: 80%;
-    text-align: start;    
+    text-align: center; 
+    align-items: center;   
 }
 .sectionIndex p{
     padding: 2vh 0;
@@ -162,6 +195,11 @@ main{
     justify-content: center;
     justify-items: center;
     height: 80%;
+}
+.imagenServ{
+    padding-top: 5vh;
+    display: flex;
+    width: 50%;
 }
 .videoServicios{
     text-align: center;
@@ -192,7 +230,7 @@ main{
 }
 .horarios{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-variant: small-caps;
     color: #3D7BBA;
     font-size: 4vh;
@@ -203,7 +241,7 @@ main{
     overflow:hidden;
     padding-bottom: 30%;
     position:relative;
-    height:0;
+    height:30vh;
 }
 .mapResponsive iframe{
     left:0;
@@ -216,11 +254,10 @@ main{
     text-align:justify;
     vertical-align: middle;
     
-    padding: 8% 30%;
+    padding: 5% 5%;
     overflow:hidden;
-    padding-bottom:400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    padding-bottom:25vh; 
     position:relative;
-    height:0;
 }
 .boton{
     padding: 2% 2%;
@@ -229,6 +266,11 @@ main{
     background-color: #3D7BBA;
     width: max-content;
     text-align: justify;
+    transition: 150ms;
+}
+.boton:hover{
+    background-color: lightsteelblue;
+
 }
 fieldset{
     display: flex;
@@ -253,7 +295,7 @@ fieldset input{
 textarea{
     display: block; 
     border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @media only screen and (max-width:600px){
@@ -279,6 +321,9 @@ textarea{
     .imgMenu{
         height: 20vh;
     }
+    .imagenServ{
+            width: 100%;
+    }
     .footerDos{
         display: none;
     }
@@ -289,7 +334,6 @@ textarea{
         display: none;
     }
     .imgTrabajos{
-    
         flex-direction: column;
         align-items: center;
         padding-bottom: 5vh;

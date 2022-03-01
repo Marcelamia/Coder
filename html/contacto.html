@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adakam - Contacto</title>
     <link rel="shortcut icon" href="../img/LogoA.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -32,17 +34,17 @@
         </nav>
     </header>
     <main><!--Contacto-->
-        <h2 class="tituloPagina">Contacto</h2>
+        <h2 class="tituloPagina animate__animated animate__fadeIn">Contacto</h2>
         <section><!-- horarios-->
-            <h3 class="horarios">Nuestros horarios</h3>
-            <p class="horarios">Lun-Vie: 09:00h a 18:00h </p>
-            <h3 class="horarios">¿Dónde estamos?</h3>
+            <h3 class="horarios" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Nuestros horarios</h3>
+            <p class="horarios" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Lun-Vie: 09:00h a 18:00h </p>
+            <h3 class="horarios" data-aos="fade-up" data-aos-anchor-placement="center-bottom">¿Dónde estamos?</h3>
             <div class="mapResponsive">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4575.7677897539!2d-58.53202647768575!3d-34.52516544864719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0c55af6583b%3A0x59530e66c478f8ba!2sADAKAM!5e0!3m2!1ses!2ses!4v1645989966771!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
 
-        <section class="formulario"><!-- formulario -->
+        <section class="formulario" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><!-- formulario -->
             <h3 class="horarios">Envíenos sus comentarios</h3><!-- titulo de formulario -->
             <form action="login.php" method="get">
                 <fieldset>
@@ -62,5 +64,11 @@
 		<a class="footerTres" href="mailto:info@adakam.com.ar" target="_blank"><img src="https://img.icons8.com/color/48/000000/love-letter--v2.png"/><h3>info@adakam.com.ar</h3></a>
         <a class="footerCuatro" href="https://wa.me/+54633705594" target="_blank"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/><h3>633 70 55 94</h3></a>
 	</footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+      </script>
+      
 </body>
 </html>

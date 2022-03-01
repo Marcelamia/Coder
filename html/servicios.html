@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adakam - Servicios</title>
     <link rel="shortcut icon" href="../img/LogoA.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -33,17 +35,15 @@
     </header>
     <main><!--Servicios-->
  
-        <h2 class="tituloPagina">Servicios</h2>
-        <iframe class="videoServicios" src="https://www.youtube.com/embed/PfWqjKemdWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <section>
+        <h2 class="tituloPagina animate__animated animate__fadeIn">Servicios</h2>
+        <iframe class="videoServicios" src="https://www.youtube.com/embed/PfWqjKemdWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="fade-up" data-aos-anchor-placement="center-bottom"></iframe>
+        <section class="sectionIndex">
             <!--Lista de servicios-->
-
-            <ul>
-                <li>Ingeniería de detalle</li>
-                <li>Formación técnica</li>
-                <li>Instalaciones eléctricas industriales</li>
-                <li>Domótica</li>
-            </ul>
+            <h3 class="h3Portada" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Ingeniería de detalle</h3>
+            <h3 class="h3Portada" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Formación técnica</h3>
+            <h3 class="h3Portada" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Instalaciones eléctricas industriales</h3>
+            <h3 class="h3Portada" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Domótica</h3>
+            <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" src="../img/cpx.jpg" class="imagenServ" alt="">
         </section>
     </main> 
     <footer><!--footer-->
@@ -52,5 +52,11 @@
 		<a class="footerTres" href="mailto:info@adakam.com.ar" target="_blank"><img src="https://img.icons8.com/color/48/000000/love-letter--v2.png"/><h3>info@adakam.com.ar</h3></a>
         <a class="footerCuatro" href="https://wa.me/+54633705594" target="_blank"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/><h3>633 70 55 94</h3></a>
 	</footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+      </script>
+      
 </body>
 </html>

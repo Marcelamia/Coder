@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adakam - Trabajos</title>
     <link rel="shortcut icon" href="../img/LogoA.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -32,9 +34,9 @@
         </nav>
     </header>
     <main><!--Trabajos-->
-        <h2 class="tituloPagina">Trabajos</h2>
-        <iframe class="videoTrabajos" src="https://www.youtube.com/embed/Xk2HCd4lnlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <section class="imgTrabajos"><!-- Imágenes -->
+        <h2 class="tituloPagina animate__animated animate__fadeIn">Trabajos</h2>
+        <iframe class="videoTrabajos" src="https://www.youtube.com/embed/Xk2HCd4lnlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="fade-up" data-aos-anchor-placement="center-bottom"></iframe>
+        <section class="imgTrabajos" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><!-- Imágenes -->
             <img src="../img/IMG_00.jpg" alt="Ejemplo de trabajo0">
             <img src="../img/IMG_01.jpg" alt="Ejemplo de trabajo1">
             <img src="../img/IMG_02.jpg" alt="Ejemplo de trabajo2">
@@ -47,5 +49,11 @@
 		<a class="footerTres" href="mailto:info@adakam.com.ar" target="_blank"><img src="https://img.icons8.com/color/48/000000/love-letter--v2.png"/><h3>info@adakam.com.ar</h3></a>
         <a class="footerCuatro" href="https://wa.me/+54633705594" target="_blank"><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/><h3>633 70 55 94</h3></a>
 	</footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+      </script>
+      
 </body>
 </html>
