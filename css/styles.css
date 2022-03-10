@@ -1,345 +1,92 @@
-*{
-    margin:0;
-    padding:0;
-}
-ul{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-    color:darkgray; 
-}
-a:hover{
-    color: whitesmoke; 
-}
-.listaMenu li a{
-    transition: all 1s;
-}
-body{
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    grid-template-rows: 10vh 40vh auto 10vh;
-    background-color: rgb(255, 251, 251);
-    grid-template-areas: "header header"
-    "portada1 portada2"                         
-    "main main"
-    "footer footer";
-}
-header{
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: header;
-    text-align:center;
-    justify-content:space-around;
-    align-items:center;
-    background-color:#231F20;   
-}
-.listaMenu{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80vw;
-    font-size: 3vh;
-    font-weight:lighter ;
-    justify-content:space-evenly;
-    align-items:center;
-    color:rgb(47, 47, 44);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-.imgMenu{
-    height: 80%;
-    transition: all 2s;
-}
-.imgMenu:hover{
-    transform: scale(1.1,1.1);
-    transition: all 1s;
-}
-footer{
-    display: flex;
-    flex-wrap: nowrap;
-    grid-area: footer;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-transform:none;
-    font-size: 2vh;
-    background-color: #231F20;
-    color: #3D7BBA;;
-    align-self: end;
-    justify-content: space-evenly;
-    align-items:center;
-}
-.footerUno{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    font-size: 100%;
-    transition: 30ms;
-}
-.footerUno:hover{
-    transform: scale(1.05,1.05);
-    transition: 150ms;
-}
-.footerDos{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    font-size: 100%;
-    transition: 30ms;
-}
-.footerDos:hover{
-    transform: scale(1.05,1.05);
-    transition: 150ms;
-}
-.footerTres{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: 30ms;
-}
-.footerTres:hover{
-    transform: scale(1.05,1.05);
-    transition: 150ms;
-}
-.footerTres img{
-    width: 60%;
-}    
-.footerCuatro{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    transition: 30ms;
-}
-.footerCuatro:hover{
-    transform: scale(1.05,1.05);
-    transition: 150ms;
-}
-h1{ 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    font-style:normal; 
-    font-variant:small-caps;
-    color:#231F20;
-}
-.listaMenu strong{
-    color:#3D7BBA
-}
-.portada1{
-    grid-area: portada1;
-    text-align:center;
-    justify-content:space-evenly;
-    background-image: url(../img/AdakamLogo.png);
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid #231F20;
-}
-.tituloH1{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    font-style:normal; 
-    font-variant:small-caps;
-    font-size:4vh;
-    color:#231F20;
-    text-align: center;
-    text-justify: distribute-all-lines;
-}
-.portada2{
-    grid-area: portada2;
-    justify-content: space-evenly;
-    background-image: url(../img/IMG_02.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid #231F20;
-}
-main{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    
-    background-color: white;
-    justify-content:space-between;
-    align-items:center;
-    align-content: center;
-    color: #231F20;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}    
-.tituloPagina{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-    font-style:normal; 
-    font-variant:small-caps;
-    font-size:5vh;
-    color:#231F20;
-    text-align: center;
-    text-justify: distribute-all-lines;
-    padding-top: 5vh;
-}
-.h3Portada{
-    color:#231F20;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4vh;
-    padding-top: 10vh;
-    text-align: center;
-}
-.sectionIndex{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    text-align: center; 
-    align-items: center;   
-}
-.sectionIndex p{
-    padding: 2vh 0;
-    text-align: center;
-}
-.imagenfinal{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    height: 80%;
-}
-.imagenServ{
-    padding-top: 5vh;
-    display: flex;
-    width: 50%;
-}
-.videoServicios{
-    text-align: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 25%;
-    padding-right: 25%;
-    height: 80vh;
-    width: 80vw;
-}
-.videoTrabajos{
-    text-align: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 25%;
-    padding-right: 25%;
-    height: 80vh;
-    width: 80vw;   
-}
-.imgTrabajos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 5vh;
-}
-.imgTrabajos img{
-    width: 24%;
-}
-.horarios{
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-variant: small-caps;
-    color: #3D7BBA;
-    font-size: 4vh;
-    padding-top: 5vh;
-}
-/* Start: Google Maps Responsive */
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: darkgray; }
+
+a:hover {
+  color: whitesmoke; }
+
+.nav-link {
+  color: darkgray; }
+
+.nav-link:hover {
+  color: whitesmoke; }
+
+header {
+  background-color: #231F20; }
+
+footer {
+  background-color: #231F20;
+  color: #3D7BBA; }
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-variant: small-caps;
+  color: #231F20; }
+
+.listaMenu {
+  font-size: 3vh;
+  font-weight: lighter;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.active {
+  color: #3D7BBA; }
+
+.portada1 {
+  height: 40vh;
+  text-align: center;
+  justify-content: space-evenly;
+  background-image: url(../img/AdakamLogo.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #231F20; }
+
+.tituloH1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-variant: small-caps;
+  font-size: 4vh;
+  color: #231F20; }
+
+.portada2 {
+  height: 40vh;
+  justify-content: space-evenly;
+  background-image: url(../img/IMG_02.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #231F20; }
+
+.tituloPagina {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-variant: small-caps;
+  color: #231F20; }
+
+.imagenServ {
+  height: 100vh; }
+
+.video {
+  height: 80vh;
+  width: 80vw; }
+
+.horarios {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-variant: small-caps;
+  color: #3D7BBA; }
+
 .mapResponsive {
-    overflow:hidden;
-    padding-bottom: 30%;
-    position:relative;
-    height:30vh;
-}
-.mapResponsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-.formulario{
-    text-align:justify;
-    vertical-align: middle;
-    
-    padding: 5% 5%;
-    overflow:hidden;
-    padding-bottom:25vh; 
-    position:relative;
-}
-.boton{
-    padding: 2% 2%;
-    display: inline;
-    border-radius: 10%;
-    background-color: #3D7BBA;
-    width: max-content;
-    text-align: justify;
-    transition: 150ms;
-}
-.boton:hover{
-    background-color: lightsteelblue;
+  overflow: hidden;
+  padding-bottom: 30%;
+  position: relative;
+  height: 30vh; }
 
-}
-fieldset{
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    background-color: #3D7BBA;
-    border-radius: 10px;
-    
-    left:0;
-    top:0;
-    height:100%;
-    width:80%;
-    position:relative;
-}
-fieldset input{
-    display: block;
-    margin: 2%;
-    padding: 2%;
-    width: auto;
-    border-radius: 10px;
-}
-textarea{
-    display: block; 
-    border-radius: 10px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-@media only screen and (max-width:600px){
-    body{
-    grid-template-columns:  100%;
-    grid-template-rows: auto 40vh auto 10vh;
-    grid-template-areas: "header"
-                        "portada1"                         
-                        "main"
-                        "footer";
-    }
-    /*Header*/
-    header{
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content:space-evenly;
-    }
-    .listaMenu{
-    flex-direction: column;
-    font-size: 4vh;
-    padding-bottom: 2vh;
-    }
-    .imgMenu{
-        height: 20vh;
-    }
-    .imagenServ{
-            width: 100%;
-    }
-    .footerDos{
-        display: none;
-    }
-    .footerTres{
-        display: none;
-    }
-    .footerCuatro{
-        display: none;
-    }
-    .imgTrabajos{
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 5vh;
-    }
-    .imgTrabajos img{
-        width: 80%;
-        padding-bottom: 5vh ;
-    }
-}
+.mapResponsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
