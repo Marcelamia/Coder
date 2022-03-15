@@ -1,0 +1,14 @@
+/* Edición de Bootstrap */
+
+.nav-link{
+    color:$colLink;
+    &:hover{
+        color: $colHov; 
+    }
+}
+.active{
+    color:$azulFesto;
+}
+.bg-dark{
+    background-color: $colFondo !important;
+}
