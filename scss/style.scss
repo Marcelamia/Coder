@@ -14,7 +14,6 @@
 a{
     text-decoration: none;
     color:$colLink; 
-    
     &:hover{
         color: $colHov; 
     }
@@ -25,35 +24,42 @@ h1{
     font-variant:small-caps;
     color:$colFondo;
 }
-.portada1{
-    display: flex;
-    height: 30vh;
-    text-align:center;
-    align-items: flex-end;
-    justify-content:space-evenly;
-    background-image: url(../img/AdakamLogo.png);
-    background-position: center;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid $colFondo;
-}
-.tituloH1{
-    font-family: $fuente; 
-    font-variant:small-caps;
-    font-size: 100%;
-    color:$colFondo;
-}
-.portada2{
-    height: 30vh;
-    justify-content: space-evenly;
-    background-image: url(../img/IMG_02.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid $colFondo;
-}
 .tituloPagina{
     font-family:$fuente; 
     font-variant:small-caps;
-    color:$colFondo;   
+    color:$colFondo;
+    letter-spacing: 0.2vw;
+    transform: scaleY(110%);
+    text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) $colLink;  
+}
+.fondo{
+    background-color: $polarizado;
+    background-blend-mode:overlay ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:$colHov;
+}
+.fondo__Qh{
+    @extend .fondo;
+    background-image: url(../img/cpx.jpg);
+    background-attachment:fixed;
+    border-radius: 20px;
+    box-shadow: 2px -2px 16px 0px $colFondo;
+    border: 1px solid $colFondo;
+    text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) black;
+}
+.imgZoom{
+    transition: 300ms;
+    border-radius: 20px;
+    &:hover{
+        transform: scale(1.01,1.01);
+        box-shadow: 2px -2px 16px 0px $colFondo;
+        border: 1px solid $colFondo;
+    }
+}
+.h3Portada{
+    color: #4e4e4e ;
+    text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.2vw;
 }

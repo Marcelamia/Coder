@@ -1,9 +1,100 @@
 @charset "UTF-8";
 /* Nav */
+.fondo__Menu {
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 75%; }
+
+.fondoHeaderIndex {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/portada2.jpg);
+  background-attachment: unset;
+  min-height: auto; }
+
+.fondoHeaderServicios {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/ADAKAM.jpg);
+  background-attachment: fixed;
+  min-height: auto; }
+
+.fondoHeaderTrabajos {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/trabajos.JPG);
+  background-attachment: fixed;
+  min-height: auto; }
+
+.fondoHeaderNosotros {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/cpx.jpg);
+  background-attachment: fixed;
+  min-height: auto; }
+
+.fondoHeaderContacto {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/contacto.jpg);
+  background-attachment: fixed;
+  min-height: auto; }
+
+.parallax1 {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/contacto.jpg);
+  background-attachment: fixed;
+  min-height: 50vh; }
+
+.parallax2 {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/30.JPG);
+  background-attachment: fixed;
+  min-height: 80vh; }
+
 .listaMenu {
+  display: contents;
   font-size: 3vh;
   font-weight: lighter;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+.logoHeader {
+  width: 30%;
+  transition: 100ms; }
+  .logoHeader:hover {
+    transform: scale(1.1); }
+
+.portada1, .portada1Index {
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  background-image: url(../img/AdakamLogo.png);
+  background-position: center;
+  background-position-y: 20vh;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  min-height: 50vh; }
+
+.portada1Index {
+  height: 90vh; }
+
+.tituloH1 {
+  text-align: right;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-variant: small-caps;
+  color: whitesmoke;
+  font-size: calc(1rem + 2.5vw);
+  letter-spacing: 0.2vw; }
+
+.portada2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: whitesmoke;
+  text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) black; }
 
 /* Footer*/
 footer {
@@ -49,11 +140,50 @@ footer {
 .bg-dark {
   background-color: #231F20 !important; }
 
+.btn-primary {
+  color: darkgray;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 100ms; }
+  .btn-primary:hover {
+    color: whitesmoke;
+    background-color: #3D7BBA !important;
+    transform: scale(1.08); }
+
+.navbar {
+  justify-content: flex-end; }
+  .navbar .container-fluid {
+    justify-content: flex-end; }
+
+.navbar-toggler {
+  background-color: darkgray;
+  transition: 200ms; }
+  .navbar-toggler:hover {
+    background-color: whitesmoke;
+    transform: scale(1.01, 1.01); }
+
 /* MediasQuery */
 @media only screen and (max-width: 576px) {
   .video {
     height: auto;
-    width: 80%; } }
+    width: 80%; }
+  .portada2 {
+    height: auto; }
+  .portada1, .portada1Index {
+    background-position-y: 7vh;
+    min-height: 20vh;
+    background-size: 40%; }
+  .portada1Index {
+    height: auto; }
+  .tituloH1 {
+    text-align: center; }
+  .flex-dir-col {
+    flex-direction: column; }
+    .flex-dir-col p {
+      padding: 8vh 0 5vh 0; }
+  .flex-dir-col-rev {
+    flex-direction: column-reverse; }
+    .flex-dir-col-rev p {
+      padding: 8vh 0 5vh 0; } }
 
 * {
   margin: 0;
@@ -71,34 +201,39 @@ h1 {
   font-variant: small-caps;
   color: #231F20; }
 
-.portada1 {
-  display: flex;
-  height: 30vh;
-  text-align: center;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  background-image: url(../img/AdakamLogo.png);
-  background-position: center;
-  background-size: 70%;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid #231F20; }
-
-.tituloH1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-variant: small-caps;
-  font-size: 100%;
-  color: #231F20; }
-
-.portada2 {
-  height: 30vh;
-  justify-content: space-evenly;
-  background-image: url(../img/IMG_02.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid #231F20; }
-
 .tituloPagina {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-variant: small-caps;
-  color: #231F20; }
+  color: #231F20;
+  letter-spacing: 0.2vw;
+  transform: scaleY(110%);
+  text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) darkgray; }
+
+.fondo, .fondoHeaderIndex, .fondoHeaderServicios, .fondoHeaderTrabajos, .fondoHeaderNosotros, .fondoHeaderContacto, .parallax1, .parallax2, .fondo__Qh {
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke; }
+
+.fondo__Qh {
+  background-image: url(../img/cpx.jpg);
+  background-attachment: fixed;
+  border-radius: 20px;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  border: 1px solid #231F20;
+  text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) black; }
+
+.imgZoom {
+  transition: 300ms;
+  border-radius: 20px; }
+  .imgZoom:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 2px -2px 16px 0px #231F20;
+    border: 1px solid #231F20; }
+
+.h3Portada {
+  color: #4e4e4e;
+  text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.2vw; }

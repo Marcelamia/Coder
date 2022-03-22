@@ -5,4 +5,31 @@
         height: auto;
         width: 80%;
     }
+    .portada2{
+        height: auto;
+    } 
+    .portada1{
+        background-position-y: 7vh;
+        min-height: 20vh;
+        background-size: 40%;
+    }
+    .portada1Index{
+        height:auto;
+    }
+    .tituloH1{
+        text-align: center;
+    }
+    .flex-dir-col{
+        flex-direction: column;
+        & p {
+            padding: 8vh 0 5vh 0;
+            
+        }
+    }
+    .flex-dir-col-rev{
+        flex-direction:column-reverse;
+        & p {
+            padding: 8vh 0 5vh 0;
+        }
+    }
 }

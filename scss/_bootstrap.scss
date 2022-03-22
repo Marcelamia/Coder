@@ -12,3 +12,29 @@
 .bg-dark{
     background-color: $colFondo !important;
 }
+.btn-primary{
+    color: $colLink;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 100ms;
+    &:hover{
+        color: $colHov;
+        background-color: $azulFesto !important;
+        transform: scale(1.08);
+    }
+}
+.navbar{
+    justify-content: flex-end;
+    .container-fluid{
+        justify-content: flex-end;
+    }
+}
+.navbar-toggler{
+    background-color: $colLink;
+    transition: 200ms;
+    &:hover{
+        background-color: $colHov;
+        transform: scale(1.01,1.01);
+    }
+}
+//.navbar-toggler-icon{
+//    background-image: url(../img/LogoA.png)}
