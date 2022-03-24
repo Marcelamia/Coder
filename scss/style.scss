@@ -59,7 +59,18 @@ h1{
     }
 }
 .h3Portada{
-    color: #4e4e4e ;
+    color: $azulFesto ;
     text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) rgba(0, 0, 0, 0.5);
     letter-spacing: 0.2vw;
+}
+.imgCurve{
+    border-radius: 10em;
+    max-height: 50vh;
+}
+.imgCurveIng{
+    @extend .imgCurve;
+    transition: 500ms;
+    &:hover{
+        filter: invert(97%);
+    }
 }

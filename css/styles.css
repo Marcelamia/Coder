@@ -234,6 +234,15 @@ h1 {
     border: 1px solid #231F20; }
 
 .h3Portada {
-  color: #4e4e4e;
+  color: #3D7BBA;
   text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) rgba(0, 0, 0, 0.5);
   letter-spacing: 0.2vw; }
+
+.imgCurve, .imgCurveIng {
+  border-radius: 10em;
+  max-height: 50vh; }
+
+.imgCurveIng {
+  transition: 500ms; }
+  .imgCurveIng:hover {
+    filter: invert(97%); }
