@@ -5,3 +5,20 @@
     width: 80vw;
 }
 
+.imgTrabajos{
+    border-radius: 20px;
+    max-height: 50vh;
+}
+
+.zoomGal{
+    transition: 500ms;
+    &:hover{
+        transition: 1250ms;
+        cursor: pointer;
+        transform: scale(180%); 
+    }
+}
+.galery{
+    border-radius: 20px;
+    overflow: hidden;
+}

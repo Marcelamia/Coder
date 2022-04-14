@@ -1,5 +1,12 @@
 /* MediasQuery */
 
+@media only screen and (max-width:768px){
+    .portada2{
+        p{
+            font-size: 1.1rem !important;
+        }
+    } 
+}
 @media only screen and (max-width:576px){
     .video{
         height: auto;
@@ -7,6 +14,10 @@
     }
     .portada2{
         height: auto;
+        align-items: center;
+        p{
+            font-size: 1rem !important;
+        }
     } 
     .portada1{
         background-position-y: 7vh;

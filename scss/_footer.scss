@@ -1,7 +1,61 @@
 /* Footer*/
 
 footer{
-    background-color: $colFondo;
-    color: $azulFesto;
+    background-color:$colFondo;
+	background-image: linear-gradient(45deg,$colFondo 50%, $azulFesto);
+    color:$azulFesto;
+    height: 100%;
+	padding: 30px 0px 10px 0px;
+	background-blend-mode: difference;
+	&:hover{
+		background-blend-mode:hard-light;
+	}
+	p {
+		color: lightgray;
+		font-size: 12px;
+		padding: 0;
+	}
+
+}
+.footerLogo{
+    width: 130px
+}
+.footerCentr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-menu {
+	margin-bottom: 0;
+	padding-left: 0;
+	color: $azulFesto;
+	li {
+		text-transform: uppercase;
+		font-weight: 900px;
+		font-size: 16px;
+		font-style: italic;
+		list-style: none;
+	}
+}
+.footerIcons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.social-estilo{
+	
+	list-style: none;
+    color: $azulFesto;	
 }
 
+.iconFoot{
+	transition: 500ms;
+    border-radius: 20px;
+    &:hover{
+        transition: transform 0.4s;
+		transform: rotateZ(360deg);
+	}
+}
+.estiloBy{
+    color:$azulFesto;
+ }

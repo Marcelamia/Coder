@@ -3,35 +3,61 @@
     background-color: $polarizado;
     opacity: 75%;
 }
-@mixin fondoHeader($bck-image, $bck-att, $altura) {
+/*
+Completar este mixin de la siguiente manera:
+$bck-image: URL de la Imagen
+$bck-att: attachment
+$altura: altura mínima
+$size: tamaño de la imagen o Cover
+*/
+@mixin fondoHeader($bck-image, $bck-att, $altura, $size) {
     @extend .fondo;
     border-bottom: 1px solid $colFondo;
     box-shadow: 2px -2px 16px 0px $colFondo;
     background-image: $bck-image;
     background-attachment: $bck-att;
     min-height: $altura;
+    background-size: $size;
 }
 .fondoHeaderIndex{
-    @include fondoHeader($fondoHeader, unset, auto)
+    @include fondoHeader($fondoHeader, unset, auto, cover);
+    animation: mymove 40s infinite;
+}
+@keyframes mymove {
+    0% {background-position: top left;}
+    50% {background-position: bottom center;}
+    100% {background-position: top left;}
+
 }
 .fondoHeaderServicios{
-    @include fondoHeader($fondoServicios, fixed, auto)
+    @include fondoHeader($fondoServicios, fixed, auto, cover)
 }
 .fondoHeaderTrabajos{
-    @include fondoHeader($fondoTrabajos, fixed, auto)
+    @include fondoHeader($fondoTrabajos, fixed, auto, cover)
 }
 .fondoHeaderNosotros{
-    @include fondoHeader($fondoNosotros, fixed, auto)
+    @include fondoHeader($fondoNosotros, fixed, auto, cover)
 }
 .fondoHeaderContacto{
-    @include fondoHeader($fondoContacto, fixed, auto)
+    @include fondoHeader($fondoContacto, fixed, auto, cover)
 }
 .parallax1{
-    @include fondoHeader($fondoContacto, fixed, 50vh)
+    @include fondoHeader(url(../img/manodeobra.jpg), fixed, 50vh, cover)
 }
 .parallax2{
-    @include fondoHeader(url(../img/30.JPG), fixed, 80vh )
+    @include fondoHeader(url(../img/30.JPG), fixed, 50vh, cover)
 }
+.parallax3{
+    @include fondoHeader(url(../img/DSCN4130.JPG), fixed, 50vh, cover)
+}
+.parallax4{
+    @include fondoHeader(url(../img/gabinete.jpg), fixed, 50vh, cover)
+}
+
+.parallax5{
+    @include fondoHeader(url(../img/formacion.jpg), fixed, auto, cover)
+}
+
 .listaMenu{
     display: contents;
     font-size: 3vh;
@@ -73,8 +99,8 @@
 .portada2 {
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     color:$colHov;
     text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) black;
 }

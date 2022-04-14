@@ -4,54 +4,101 @@
   background-color: rgba(0, 0, 0, 0.75);
   opacity: 75%; }
 
+/*
+Completar este mixin de la siguiente manera:
+$bck-image: URL de la Imagen
+$bck-att: attachment
+$altura: altura mínima
+$size: tamaño de la imagen o Cover
+*/
 .fondoHeaderIndex {
   border-bottom: 1px solid #231F20;
   box-shadow: 2px -2px 16px 0px #231F20;
   background-image: url(../img/portada2.jpg);
   background-attachment: unset;
-  min-height: auto; }
+  min-height: auto;
+  background-size: cover;
+  animation: mymove 40s infinite; }
+
+@keyframes mymove {
+  0% {
+    background-position: top left; }
+  50% {
+    background-position: bottom center; }
+  100% {
+    background-position: top left; } }
 
 .fondoHeaderServicios {
   border-bottom: 1px solid #231F20;
   box-shadow: 2px -2px 16px 0px #231F20;
   background-image: url(../img/ADAKAM.jpg);
   background-attachment: fixed;
-  min-height: auto; }
+  min-height: auto;
+  background-size: cover; }
 
 .fondoHeaderTrabajos {
   border-bottom: 1px solid #231F20;
   box-shadow: 2px -2px 16px 0px #231F20;
   background-image: url(../img/trabajos.JPG);
   background-attachment: fixed;
-  min-height: auto; }
+  min-height: auto;
+  background-size: cover; }
 
 .fondoHeaderNosotros {
   border-bottom: 1px solid #231F20;
   box-shadow: 2px -2px 16px 0px #231F20;
   background-image: url(../img/cpx.jpg);
   background-attachment: fixed;
-  min-height: auto; }
+  min-height: auto;
+  background-size: cover; }
 
 .fondoHeaderContacto {
   border-bottom: 1px solid #231F20;
   box-shadow: 2px -2px 16px 0px #231F20;
   background-image: url(../img/contacto.jpg);
   background-attachment: fixed;
-  min-height: auto; }
+  min-height: auto;
+  background-size: cover; }
 
 .parallax1 {
   border-bottom: 1px solid #231F20;
   box-shadow: 2px -2px 16px 0px #231F20;
-  background-image: url(../img/contacto.jpg);
+  background-image: url(../img/manodeobra.jpg);
   background-attachment: fixed;
-  min-height: 50vh; }
+  min-height: 50vh;
+  background-size: cover; }
 
 .parallax2 {
   border-bottom: 1px solid #231F20;
   box-shadow: 2px -2px 16px 0px #231F20;
   background-image: url(../img/30.JPG);
   background-attachment: fixed;
-  min-height: 80vh; }
+  min-height: 50vh;
+  background-size: cover; }
+
+.parallax3 {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/DSCN4130.JPG);
+  background-attachment: fixed;
+  min-height: 50vh;
+  background-size: cover; }
+
+.parallax4 {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/gabinete.jpg);
+  background-attachment: fixed;
+  min-height: 50vh;
+  background-size: cover; }
+
+.parallax5 {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
+  background-image: url(../img/formacion.jpg);
+  background-attachment: fixed;
+  min-height: auto;
+  background-size: cover; }
 
 .listaMenu {
   display: contents;
@@ -91,21 +138,72 @@
 .portada2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   color: whitesmoke;
   text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) black; }
 
 /* Footer*/
 footer {
   background-color: #231F20;
+  background-image: linear-gradient(45deg, #231F20 50%, #3D7BBA);
+  color: #3D7BBA;
+  height: 100%;
+  padding: 30px 0px 10px 0px;
+  background-blend-mode: difference; }
+  footer:hover {
+    background-blend-mode: hard-light; }
+  footer p {
+    color: lightgray;
+    font-size: 12px;
+    padding: 0; }
+
+.footerLogo {
+  width: 130px; }
+
+.footerCentr {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer-menu {
+  margin-bottom: 0;
+  padding-left: 0;
+  color: #3D7BBA; }
+  .footer-menu li {
+    text-transform: uppercase;
+    font-weight: 900px;
+    font-size: 16px;
+    font-style: italic;
+    list-style: none; }
+
+.footerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.social-estilo {
+  list-style: none;
+  color: #3D7BBA; }
+
+.iconFoot {
+  transition: 500ms;
+  border-radius: 20px; }
+  .iconFoot:hover {
+    transition: transform 0.4s;
+    transform: rotateZ(360deg); }
+
+.estiloBy {
   color: #3D7BBA; }
 
 /* Estilo de la página contacto */
 .horarios {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-variant: small-caps;
-  color: #3D7BBA; }
+  letter-spacing: 0.2vw;
+  transform: scaleY(110%);
+  text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) darkgray;
+  text-align: center; }
 
 .mapResponsive {
   overflow: hidden;
@@ -127,6 +225,21 @@ footer {
 .video {
   height: 80vh;
   width: 80vw; }
+
+.imgTrabajos {
+  border-radius: 20px;
+  max-height: 50vh; }
+
+.zoomGal {
+  transition: 500ms; }
+  .zoomGal:hover {
+    transition: 1250ms;
+    cursor: pointer;
+    transform: scale(180%); }
+
+.galery {
+  border-radius: 20px;
+  overflow: hidden; }
 
 /* Edición de Bootstrap */
 .nav-link {
@@ -150,9 +263,9 @@ footer {
     transform: scale(1.08); }
 
 .navbar {
-  justify-content: flex-end; }
+  justify-content: center; }
   .navbar .container-fluid {
-    justify-content: flex-end; }
+    justify-content: center; }
 
 .navbar-toggler {
   background-color: darkgray;
@@ -162,12 +275,19 @@ footer {
     transform: scale(1.01, 1.01); }
 
 /* MediasQuery */
+@media only screen and (max-width: 768px) {
+  .portada2 p {
+    font-size: 1.1rem !important; } }
+
 @media only screen and (max-width: 576px) {
   .video {
     height: auto;
     width: 80%; }
   .portada2 {
-    height: auto; }
+    height: auto;
+    align-items: center; }
+    .portada2 p {
+      font-size: 1rem !important; }
   .portada1, .portada1Index {
     background-position-y: 7vh;
     min-height: 20vh;
@@ -185,6 +305,12 @@ footer {
     .flex-dir-col-rev p {
       padding: 8vh 0 5vh 0; } }
 
+.imgZoom2 {
+  border-radius: 50% !important;
+  border: 4px solid #3D7BBA;
+  width: 200px;
+  height: 200px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -201,6 +327,9 @@ h1 {
   font-variant: small-caps;
   color: #231F20; }
 
+main {
+  background-color: rgba(0, 0, 0, 0.1); }
+
 .tituloPagina {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-variant: small-caps;
@@ -209,33 +338,44 @@ h1 {
   transform: scaleY(110%);
   text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) darkgray; }
 
-.fondo, .fondoHeaderIndex, .fondoHeaderServicios, .fondoHeaderTrabajos, .fondoHeaderNosotros, .fondoHeaderContacto, .parallax1, .parallax2, .fondo__Qh {
+.fondo, .fondoHeaderIndex, .fondoHeaderServicios, .fondoHeaderTrabajos, .fondoHeaderNosotros, .fondoHeaderContacto, .parallax1, .parallax2, .parallax3, .parallax4, .parallax5, .fondo__Qh {
   background-color: rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: whitesmoke; }
 
+.fondoTitulo {
+  background-image: radial-gradient(#3D7BBA, #231F20 125vh); }
+
 .fondo__Qh {
+  border-bottom: 1px solid #231F20;
+  box-shadow: 2px -2px 16px 0px #231F20;
   background-image: url(../img/cpx.jpg);
   background-attachment: fixed;
+  min-height: auto;
+  background-size: cover;
   border-radius: 20px;
   box-shadow: 2px -2px 16px 0px #231F20;
   border: 1px solid #231F20;
   text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) black; }
 
-.imgZoom {
-  transition: 300ms;
+.imgZoom, .imgZoom2 {
+  transition: 500ms;
   border-radius: 20px; }
-  .imgZoom:hover {
-    transform: scale(1.01, 1.01);
-    box-shadow: 2px -2px 16px 0px #231F20;
-    border: 1px solid #231F20; }
+  .imgZoom:hover, .imgZoom2:hover {
+    transform: scale(103%);
+    box-shadow: 2px -2px 16px 0px #231F20; }
+
+.marco {
+  background-color: rgba(245, 245, 245, 0.05);
+  border-radius: 25px; }
+  .marco:hover {
+    box-shadow: 2px -2px 16px 0px #231F20; }
 
 .h3Portada {
   color: #3D7BBA;
-  text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) rgba(0, 0, 0, 0.5);
+  text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) rgba(0, 0, 0, 0.931);
   letter-spacing: 0.2vw; }
 
 .imgCurve, .imgCurveIng {

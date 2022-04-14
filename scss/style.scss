@@ -6,6 +6,7 @@
 @import "./trabajos";
 @import "./bootstrap";
 @import "./mediaq";
+@import "./nosotros";
 
 *{
     margin:0;
@@ -24,6 +25,10 @@ h1{
     font-variant:small-caps;
     color:$colFondo;
 }
+main{
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
 .tituloPagina{
     font-family:$fuente; 
     font-variant:small-caps;
@@ -32,36 +37,45 @@ h1{
     transform: scaleY(110%);
     text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) $colLink;  
 }
+
 .fondo{
     background-color: $polarizado;
-    background-blend-mode:overlay ;
-    background-position: center;
-    background-size: cover;
+    background-blend-mode: overlay ;
     background-repeat: no-repeat;
+    background-position: center;
     color:$colHov;
 }
+.fondoTitulo{
+    background-image:radial-gradient($azulFesto,$colFondo 125vh) ;
+}
 .fondo__Qh{
-    @extend .fondo;
-    background-image: url(../img/cpx.jpg);
-    background-attachment:fixed;
+    @include fondoHeader($fondoNosotros, fixed, auto, cover);
     border-radius: 20px;
     box-shadow: 2px -2px 16px 0px $colFondo;
     border: 1px solid $colFondo;
     text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) black;
 }
 .imgZoom{
-    transition: 300ms;
+    transition: 500ms;
     border-radius: 20px;
     &:hover{
-        transform: scale(1.01,1.01);
+        transform: scale(103%);
         box-shadow: 2px -2px 16px 0px $colFondo;
-        border: 1px solid $colFondo;
+    }
+}
+
+.marco{
+    background-color: rgba(245, 245, 245, 0.05);
+    border-radius: 25px;
+    &:hover{
+        box-shadow:2px -2px 16px 0px $colFondo;
     }
 }
 .h3Portada{
     color: $azulFesto ;
-    text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) rgba(0, 0, 0, 0.5);
+    text-shadow: calc(1px + 0.1vw) calc(1px + 0.1vw) rgba(0, 0, 0, 0.931);
     letter-spacing: 0.2vw;
+
 }
 .imgCurve{
     border-radius: 10em;
@@ -74,3 +88,5 @@ h1{
         filter: invert(97%);
     }
 }
+
+
